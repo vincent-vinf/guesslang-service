@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.9
 WORKDIR /guesslang-service
 COPY requirements.txt /guesslang-service/requirements.txt
 RUN --mount=type=cache,target=/root/.cache pip install \
